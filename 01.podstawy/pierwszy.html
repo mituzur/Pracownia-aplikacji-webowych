@@ -7,8 +7,55 @@
 </head>
 <body>
     <h1>pierwsza strona w js</h1>
-    <script>
-        document.write("hello woeld")
+    <script> 
+    //komentarz nr1
+    /* komentarz wielolinijkowy nr 2
+       fdfsdfsd
+       sdfsdfsdf
+       sfsdfsf
+    */
+    
+        document.write("hello world") //- ta instrukacja wyswietli na stronie tekst
+        //document.write("hello world") błędny komentarz
+        document.write("9") //tekst
+        document.write(9) //liczba całkowita
+        document.write(5.4) //liczba rzeczywista
+    
+        /*nazwa zmiennej jest to identyfikator
+        warunki poprawnego identyfikatora
+        składa sie tylko z dozwolonych znaków:
+        -alfabet angielski a-z oraz A-Z
+        -cyfry arabskie 0-9
+        -podkreslenie _
+        -nie moze zaczynac sie od cyfry
+        -nie moze to byc slowo kluczowe jezyka
+        -musi byc ono unikalne w swoim zakresie widocznosci
+
+        warunki wymagane przez programistów:
+        -nazwa musi oddawać charakter uzycia
+        -nazwa po angielsku
+        -nazwa z wielu słow: snake case (podkreślenie _), camelcase(oddzielenie duża literą)*/
+
+
+    
+        var userName;
+
+        userName = "Jan"
+        document.write("<br/>")
+        document.write("nazywam się: ")
+        document.write(userName)
+        document.write("<br/>")
+
+        var firstNumber, secondNumber, result;
+
+        firstNumber = 58;
+        secondNumber = 12;
+
+        result = firstNumber + secondNumber;
+        document.writeln("wynik dodawania: "+ result);
+
+
+
     </script>
     <div>
         TO JUZ BEDZIE PONIZEJ
