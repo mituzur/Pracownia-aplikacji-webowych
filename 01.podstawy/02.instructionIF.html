@@ -7,14 +7,44 @@
 </head>
 <body>
     <script>
+       
+        /* operatory porównania:
+        > - większe
+        < - mniejsze 
+        >= - wieksze bądz równe
+        <= - mniejsze bądz równe
+        == - równe
+        === - równe musz być typy
+        != - różne 
+        !== - różne ale te same typy
+
+        */
         //pobierz od uzytkownika liczbę
         // i wyświetl czy jest ona dodatnia czy ujemna
+        function task1()
+        {
 
+        
         var numberFromUser;
 
-        numberFromUser = 5;
+        numberFromUser = 5; // tu mozna wpisac dodatnia albo ujemną
         
-        if (numberFromUser)
+        if (numberFromUser >= 0)
+        {
+            document.writeln("liczba jest dodatnia <br/>");
+        }
+
+        if (numberFromUser < 0)
+            document.writeln("liczba jest ujemna <br/>");
+
+        if (numberFromUser >= 0)
+            document.writeln("liczba jest dodatnia <br/>");
+        else
+            document.writeln("liczba jest ujemna <br/>");
+    }
+
+task1();
+        
     </script>
     
 </body>
