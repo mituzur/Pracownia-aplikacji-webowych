@@ -8,7 +8,14 @@
 <body>
     <script>
        
-        /* operatory porównania:
+        /* 
+        Zasady:
+        -dry - don't repeat yourself
+        -kiss - keep it simple, stupid
+        - yagni - you aren't gonna need it
+        -solid 
+
+        operatory porównania:
         > - większe
         < - mniejsze 
         >= - wieksze bądz równe
@@ -18,6 +25,18 @@
         != - różne 
         !== - różne ale te same typy
 
+        operatory logiczne:
+        && - and
+        || - or
+        ! - not
+
+        a   b    a && b   a || b   !a
+        F   F      F         F     T
+        F   T      F         T     T
+        T   F      F         T     F
+        T   T      T         T     F
+
+           
         */
         //pobierz od uzytkownika liczbę
         // i wyświetl czy jest ona dodatnia czy ujemna
@@ -42,9 +61,45 @@
         else
             document.writeln("liczba jest ujemna <br/>");
     }
+ 
+//napisz program,
+//który wyświetli informacje czy liczba jest parzysta czy nieparzysta
 
-task1();
-        
+        function task2()
+        {
+    var numberFromUser = 89;
+
+    var rest = numberFromUser % 2;
+
+    if(rest == 0)
+        document.writeln("liczba parzysta<br/>");
+    else
+        document.writeln("liczba nieparzysta<br/>");
+        }
+
+
+//napisz program który wyświetli informacje
+//czy liczba jest z zakresu <1; 10).
+function task3()
+        {
+            var numberFromUser = 78;
+
+            //wersja 1
+
+            if (numberFromUser >= 1)
+        {
+            if(numberFromUser <10)
+                document.write("liczba jest z przedziału<br>")
+            else
+                document.write("liczba spoza przedziału<br/>")
+        }
+            else 
+                document.write("liczba spoza przedziału<br>")
+        }
+
+//task1();
+//task2();
+task3()
     </script>
     
 </body>
