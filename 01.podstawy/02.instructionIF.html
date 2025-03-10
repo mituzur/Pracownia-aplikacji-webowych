@@ -95,56 +95,52 @@ function task3()
                 document.write("liczba spoza przedziału<br>")
         }
 
-//task1();
-//task2();
-//task3()
- //task4()
-
 //Napisz program, który wykona dzielenie dwóch liczb
 function task4()
 
 {
     var firstNumber, secondNumber, result;
-    firstNumber = 10
-    secondNumber = 2
+    firstNumber = 10;
+    secondNumber = 2;
 
-    result = firstNumber / secondNumber
+    result = firstNumber / secondNumber;
     document.writeln("wynik dzielenia: "+ result);
-        
-
-
 }
+
 //Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i sprawdzi, czy są one równe. Wyświetl odpowiedni komunikat.
 function task5()
 {
-    var firstNumber, secondNumber ;
+    var firstNumber, secondNumber;
 
     firstNumber = 5;
     secondNumber = 5; 
         
-    if (firstNumber == secondNumber)
+    if (firstNumber == secondNumber);
         document.writeln("liczby sa równe <br/>");
 }
+
 //Napisz program, który poprosi użytkownika o podanie wieku i sprawdzi, czy osoba jest pełnoletnia. Wyświetl odpowiedni komunikat.
 function task6()
 {
-    var numberFromUser = 3
+    var numberFromUser = 3;
 
     if (numberFromUser < 18)
         document.writeln("niepełnoletni<br/>");
     else
-        document.write("pełnoletni<br/>")
+        document.write("pełnoletni<br/>");
 }
+
 //Napisz program, który poprosi użytkownika o podanie liczby całkowitej i obliczy jej wartość bezwzględną. Wyświetl wynik.
 function task7()
 {
-    var numberFromUser = -5
+    var numberFromUser = -5;
 
-    if (numberFromUser > 0)
+    if (numberFromUser > 0);
         document.writeln("wartość bezwzględna " + numberFromUser);
-    if (numberFromUser < 0)
+    if (numberFromUser < 0);
         document.writeln("wartość bezwzględna " + numberFromUser *(-1));
 }
+
 //Napisz program, który poprosi użytkownika o podanie liczby od 1 do 7 i wyświetli odpowiadający mu dzień tygodnia.
 function task8()
 {
@@ -165,14 +161,9 @@ function task8()
     else if (numberFromUser == 7)
         document.writeln("Niedziela <br/>");
     else
-        document.writeln("nieprawidłowa dana <br/>")
-                    
-                    
-                
-              
-        
-
+        document.writeln("nieprawidłowa dana <br/>");
 }
+
 //Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i wyświetli większą z nich.
 function task9()
 {
@@ -181,34 +172,37 @@ function task9()
     firstNumber = 5;
     secondNumber = 6;
 
-    if(firstNumber > secondNumber)
-        document.writeln("Pierwsza liczba wieksza<br/>")
-    if(firstNumber < secondNumber)
-        document.writeln("Druga liczba wieksza<br/>")
-    if(firstNumber == secondNumber)
-        document.writeln("Równe<br/>")
+    if(firstNumber > secondNumber);
+        document.writeln("Pierwsza liczba wieksza<br/>");
+    if(firstNumber < secondNumber);
+        document.writeln("Druga liczba wieksza<br/>");
+    if(firstNumber == secondNumber);
+        document.writeln("Równe<br/>");
 }
+
 //Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny. Wyświetl odpowiedni komunikat.
 function task10()
 {
-    var numberFromUser = 2000
+    var numberFromUser = 2000;
 
     if(numberFromUser % 4 == 0 && numberFromUser % 100 != 0 || numberFromUser % 400 == 0)
-        document.writeln("rok jest przestepny <br/>")
+        document.writeln("rok jest przestepny <br/>");
     else
-        document.writeln("rok nie jest przestepny <br/>")
+        document.writeln("rok nie jest przestepny <br/>");
 }
+
 //Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. 
 //Wyświetl odpowiedni komunikat.
 function task11()
 {
-    var numberFromUser = 30
+    var numberFromUser = 30;
 
     if(numberFromUser % 3 == 0 && numberFromUser % 5 == 0)
-        document.writeln("Liczba podzielna przez 3 i 5 <br/>")
+        document.writeln("Liczba podzielna przez 3 i 5 <br/>");
     else
-        document.writeln("Liczba nie podzielna przez 3 i 5 <br/>")
+        document.writeln("Liczba nie podzielna przez 3 i 5 <br/>");
 }
+
 /*Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
         Na  podstawie tych danych oblicz wskaźnik BMI (Body Mass Index) i wyświetl odpowiedni komunikat informujący o stanie zdrowia.
         poniżej 16 - wygłodzenie
@@ -226,14 +220,14 @@ function task11()
         */
 function task12()
 {
-    var mass, height, bmi
+    var mass, height, bmi;
 
-    mass = 100
-    height = 1.9
-    bmi = mass / (height * height)
+    mass = 100;
+    height = 1.9;
+    bmi = mass / (height * height);
 
     if(bmi < 16)
-        document.writeln("wygłodzenie <br/>")
+        document.writeln("wygłodzenie <br/>");
     else if (bmi < 17)
         document.writeln("wychudzenie <br/>");
     else if (bmi < 18.5)
@@ -247,46 +241,45 @@ function task12()
     else if (bmi < 40)
         document.writeln("2 stopień otyłości <br/>");
     else
-        document.writeln("otyłość skrajna <br/>");
-    
-     
+        document.writeln("otyłość skrajna <br/>"); 
 }
+
 //Napisz program, który poprosi użytkownika o podanie długości trzech odcinków i sprawdzi, czy można zbudować z nich trójkąt. 
 //Wyświetl odpowiedni komunikat.
 function task13()
 {
-    var firstLength, secondLength, thirdLength
+    var firstLength, secondLength, thirdLength;
 
-    firstLength = 1
-    secondLength = 1
-    thirdLength = 15
+    firstLength = 1;
+    secondLength = 1;
+    thirdLength = 15;
 
     if(firstLength + secondLength > thirdLength && secondLength + thirdLength > firstLength && thirdLength + firstLength > secondLength )
         document.writeln("można zbudować trójkąt <br/>");
     else 
         document.writeln("nie można zbudować trójkąta <br/>");
-
-
 }
+
 //Napisz program, który poprosi użytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeśli jest to możliwe. 
 //Wyświetl wynik lub odpowiedni komunikat, jeśli liczba jest ujemna.
 function task14()
 {
-    var numberFromUser = -3
+    var numberFromUser = -3;
 
     if(numberFromUser > 0)
         document.writeln("pierwiastek jest obliczalny <br/>" + Math.sqrt(numberFromUser));
     else
         document.writeln("pierwiastek nie jest obliczalny <br/>");
 }
+
 //Program sprawdzający czy podana data jest poprawna (np. sprawdzając, czy dzień jest z zakresu od 1 do 31, miesiąc od 1 do 12 itd.)
 function task15()
 {
-    var day, month, year
+    var day, month, year;
 
-    day = 10
-    month = 4
-    year = 2004
+    day = 10;
+    month = 4;
+    year = 2004;
 
     if (day <= 31)
         document.writeln("dzień jest poprawny <br/>");
@@ -299,41 +292,25 @@ function task15()
     if (year <= 2025)
         document.writeln("rok jest poprawny <br/>");
     else
-        document.writeln("rok jest błędny <br/>");
-    
-                    
+        document.writeln("rok jest błędny <br/>");              
 }
+
 //task1();
 //task2();
 //task3();
 //task4();
 //task5();
-//task6()
-//task7()
-//task8()
-//task9()
-//task10()
-//task11()
-//task12()
-//task13()
-//task14()
-task15()
+//task6();
+//task7();
+//task8();
+//task9();
+//task10();
+//task11();
+//task12();
+//task13();
+//task14();
+//task15();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-    
+</script>
 </body>
 </html>
