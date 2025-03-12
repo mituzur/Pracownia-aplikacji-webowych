@@ -36,35 +36,32 @@
         T   F      F         T     F
         T   T      T         T     F
 */
-        //pobierz od uzytkownika liczbę
-        // i wyświetl czy jest ona dodatnia czy ujemna
-        function task1()
-        {
+//pobierz od uzytkownika liczbę
+// i wyświetl czy jest ona dodatnia czy ujemna
+function task1()
+{  
+    var numberFromUser;
 
+    numberFromUser = 5; // tu mozna wpisac dodatnia albo ujemną
         
-        var numberFromUser;
-
-        numberFromUser = 5; // tu mozna wpisac dodatnia albo ujemną
-        
-        if (numberFromUser >= 0)
-        {
-            document.writeln("liczba jest dodatnia <br/>");
-        }
-
-        if (numberFromUser < 0)
-            document.writeln("liczba jest ujemna <br/>");
-
-        if (numberFromUser >= 0)
-            document.writeln("liczba jest dodatnia <br/>");
-        else
-            document.writeln("liczba jest ujemna <br/>");
+    if (numberFromUser >= 0)
+    {
+         document.writeln("liczba jest dodatnia <br/>");
     }
+
+    if (numberFromUser < 0)
+        document.writeln("liczba jest ujemna <br/>");
+
+     if (numberFromUser >= 0)
+        document.writeln("liczba jest dodatnia <br/>");
+    else
+        document.writeln("liczba jest ujemna <br/>");
+}
  
 //napisz program,
 //który wyświetli informacje czy liczba jest parzysta czy nieparzysta
-
-        function task2()
-        {
+function task2()
+{
     var numberFromUser = 89;
 
     var rest = numberFromUser % 2;
@@ -73,27 +70,26 @@
         document.writeln("liczba parzysta<br/>");
     else
         document.writeln("liczba nieparzysta<br/>");
-        }
-
+}
 
 //napisz program który wyświetli informacje
 //czy liczba jest z zakresu <1; 10).
 function task3()
-        {
-            var numberFromUser = 78;
+{
+    var numberFromUser = 78;
 
-            //wersja 1
+    //wersja 1
 
-            if (numberFromUser >= 1)
-        {
-            if(numberFromUser <10)
-                document.write("liczba jest z przedziału<br>")
-            else
-                document.write("liczba spoza przedziału<br/>")
-        }
-            else 
-                document.write("liczba spoza przedziału<br>")
-        }
+    if (numberFromUser >= 1)
+{
+    if(numberFromUser <10)
+        document.write("liczba jest z przedziału<br>")
+    else
+        document.write("liczba spoza przedziału<br/>")
+}
+    else 
+        document.write("liczba spoza przedziału<br>")
+}
 
 //Napisz program, który wykona dzielenie dwóch liczb
 function task4()
