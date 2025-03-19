@@ -7,14 +7,6 @@
 </head>
 <body>
     <script>
-        /*
-            *. Napisz program, który policzy sumę cyfr podanej przez użytkownika liczby.
-
-            *. Poproś użytkownika o podawanie liczb, aż wprowadzi zero. 
-               Oblicz sumę oraz średnią arytmetyczną wprowadzonych liczb.
-
-        */
-
         //Napisz program, który ma pobrać od użytkownika liczbę dodatnią. 
         //Zabezpiecz program przed pobieraniem liczb ujemnych. 
         function task1()
@@ -148,19 +140,42 @@
 //w osobnych linijkach.
 function task4()
 {
-    var firstNumber = parseInt(prompt("Podaj liczbe:"));
+    var number = parseInt(prompt("Podaj liczbe:"));
     
 
     do
     {
-     document.writeln(firstNumber + " <br/>")
-    } while (firstNumber > 0)
+        var digit = number % 10;
+        document.writeln(digit + " <br/>");
+        number = Math.floor(number / 10);
+    } while (number > 0)
+}
+//Napisz program, który policzy sumę cyfr podanej przez użytkownika liczby
+function task5()
+{
+    var number = parseInt(prompt("Podaj liczbe:"));
+    var sum = 0
+
+    do
+    {
+        var digit = number % 10;
+        sum += digit
+        number = Math.floor(number / 10);
+    } while (number > 0) 
+    document.writeln("suma cyfr: " + sum);
+}
+//Poproś użytkownika o podawanie liczb, aż wprowadzi zero. 
+//Oblicz sumę oraz średnią arytmetyczną wprowadzonych liczb.
+function task6()
+{
+    
 }
 
         //task1();
         //task2();
         //task3();
-        task4()
+        //task4()
+        //task5()
     </script>
 </body>
 </html>
