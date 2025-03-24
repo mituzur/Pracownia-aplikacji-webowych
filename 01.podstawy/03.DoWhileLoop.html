@@ -7,134 +7,134 @@
 </head>
 <body>
     <script>
-        //Napisz program, który ma pobrać od użytkownika liczbę dodatnią. 
-        //Zabezpiecz program przed pobieraniem liczb ujemnych. 
-        function task1()
+//Napisz program, który ma pobrać od użytkownika liczbę dodatnią. 
+//Zabezpiecz program przed pobieraniem liczb ujemnych. 
+function task1()
+{
+    //alert("To jest komunikat");
+    //prompt("Podaj daną");
+    var textFromUser;
+    var number;
+    /*
+    textFromUser = prompt("Podaj liczbę całkowitą dodatnią:");
+    number = parseInt(textFromUser);
+    if (number < 0)
+    {
+        textFromUser = prompt("Podaj liczbę całkowitą dodatnią:");
+        number = parseInt(textFromUser);
+        if (number < 0)
         {
-            //alert("To jest komunikat");
-            //prompt("Podaj daną");
-            var textFromUser;
-            var number;
-            /*
             textFromUser = prompt("Podaj liczbę całkowitą dodatnią:");
             number = parseInt(textFromUser);
             if (number < 0)
             {
-                textFromUser = prompt("Podaj liczbę całkowitą dodatnią:");
-                number = parseInt(textFromUser);
-                if (number < 0)
-                {
-                    textFromUser = prompt("Podaj liczbę całkowitą dodatnią:");
-                    number = parseInt(textFromUser);
-                    if (number < 0)
-                    {
-                        //znowu to samo
-                    }
-                }
+                //znowu to samo
             }
-            */
-
-            do
-            {
-                textFromUser = prompt("Podaj liczbę całkowitą dodatnią:");
-                number = parseInt(textFromUser);
-            } while (number < 0);
-            
-            document.write("Podałeś liczbę dodatnią: " + number + "<br/>");
         }
+    }
+    */
 
-        //Napisz program, który wylosuje liczbę 
-        // a następnie uzytkownik będzie musiał ją zgadnąć.
-        function task2()
+    do
+    {
+        textFromUser = prompt("Podaj liczbę całkowitą dodatnią:");
+        number = parseInt(textFromUser);
+    } while (number < 0);
+            
+    document.write("Podałeś liczbę dodatnią: " + number + "<br/>");
+}
+
+//Napisz program, który wylosuje liczbę 
+// a następnie uzytkownik będzie musiał ją zgadnąć.
+function task2()
+{
+    var numberFromUser;
+    const min = 1;
+    const max = 100;
+    var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    //document.writeln(randomNumber);
+    //alert(randomNumber);
+
+    /*
+    numberFromUser = parseInt(prompt("Podaj liczbę:"));
+    if (numberFromUser != randomNumber)
+    {
+        numberFromUser = parseInt(prompt("Podaj liczbę:"));
+        if (numberFromUser != randomNumber)
         {
-            var numberFromUser;
-            const min = 1;
-            const max = 100;
-            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-            //document.writeln(randomNumber);
-            //alert(randomNumber);
-
-            /*
             numberFromUser = parseInt(prompt("Podaj liczbę:"));
             if (numberFromUser != randomNumber)
             {
-                numberFromUser = parseInt(prompt("Podaj liczbę:"));
-                if (numberFromUser != randomNumber)
-                {
-                    numberFromUser = parseInt(prompt("Podaj liczbę:"));
-                    if (numberFromUser != randomNumber)
-                    {
-                        //dalej to samo
-                    }
-                }
+                //dalej to samo
             }
-            */
-
-            do
-            {
-                numberFromUser = parseInt(prompt("Podaj liczbę:"));
-                if (numberFromUser < randomNumber)
-                    alert("Za mała liczba");
-                if (numberFromUser > randomNumber)
-                    alert ("Za duża liczba");
-
-            } while (numberFromUser != randomNumber);
-
-            document.writeln("Gratulacje!!!<br/>");
         }
+    }
+    */
 
-        //Napisz program wyświetlający liczby całkowite z przedziału <1,x>.
-        //Gdzie x podaje użytkownik.
-        function task3()
+    do
+    {
+        numberFromUser = parseInt(prompt("Podaj liczbę:"));
+        if (numberFromUser < randomNumber)
+            alert("Za mała liczba");
+        if (numberFromUser > randomNumber)
+            alert ("Za duża liczba");
+
+    } while (numberFromUser != randomNumber);
+
+    document.writeln("Gratulacje!!!<br/>");
+}
+
+//Napisz program wyświetlający liczby całkowite z przedziału <1,x>.
+//Gdzie x podaje użytkownik.
+function task3()
+{
+    var upperRange = parseInt(prompt("Podaj górny zakres:"));
+
+    /*
+    document.write("1 <br/>");
+    if (upperRange >= 2)
+    {
+        document.write("2 <br/>");
+        if (upperRange >= 3)
         {
-            var upperRange = parseInt(prompt("Podaj górny zakres:"));
-
-            /*
-            document.write("1 <br/>");
-            if (upperRange >= 2)
+            document.write("3 <br/>");
+            if (upperRange >= 4)
             {
-                document.write("2 <br/>");
-                if (upperRange >= 3)
-                {
-                    document.write("3 <br/>");
-                    if (upperRange >= 4)
-                    {
-                        //i tak dalej....
-                    }
-                }
+                //i tak dalej....
             }
-            */
+        }
+    }
+    */
 
-            /*
-            var currentNumber = 1;
+    /*
+    var currentNumber = 1;
 
+    document.write(currentNumber + " <br/>");
+    currentNumber++;
+    if (upperRange >= currentNumber)
+    {
+        document.write(currentNumber + " <br/>");
+        currentNumber++;
+        if (upperRange >= currentNumber)
+        {
             document.write(currentNumber + " <br/>");
             currentNumber++;
             if (upperRange >= currentNumber)
             {
-                document.write(currentNumber + " <br/>");
-                currentNumber++;
-                if (upperRange >= currentNumber)
-                {
-                    document.write(currentNumber + " <br/>");
-                    currentNumber++;
-                    if (upperRange >= currentNumber)
-                    {
-                        //i tak dalej....
-                    }
-                }
+                //i tak dalej....
             }
-            */
-
-            var currentNumber = 1;
-
-            do
-            {
-                document.write(currentNumber + " <br/>");
-                currentNumber++;
-            } while (upperRange >= currentNumber);
-            
         }
+    }
+    */
+
+    var currentNumber = 1;
+
+    do
+    {
+        document.write(currentNumber + " <br/>");
+        currentNumber++;
+    } while (upperRange >= currentNumber);
+            
+}
 
 //Napisz program, który pobierze liczbę i wyświetli jej cyfry
 //w osobnych linijkach.
@@ -168,14 +168,28 @@ function task5()
 //Oblicz sumę oraz średnią arytmetyczną wprowadzonych liczb.
 function task6()
 {
-    
+    var number;
+    var sum = 0;
+    var count = 0;
+
+    do
+    {
+        number = parseInt(prompt("Podaj liczbę"));
+        sum = sum + number;
+        count++;
+    } while (number != 0);
+            
+    count--;
+    document.writeln("Suma: " + sum + "<br/>");
+    document.writeln("Średnia: " + sum/count + "<br/>");
 }
 
         //task1();
         //task2();
         //task3();
-        //task4()
-        //task5()
+        //task4();
+        //task5();
+        //task6();
     </script>
 </body>
 </html>
