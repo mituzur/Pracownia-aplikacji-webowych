@@ -39,7 +39,34 @@
             }
         }
 
-        task1();
+        //Napisz program, który policzy NWD dwóch liczb.
+        function task2()
+        {
+            var firstNumber = parseInt(prompt("Podaj pierwszą liczbę:"));
+            var secondNumber = parseInt(prompt("Podaj drugą liczbę:"));
+
+            var nwd;
+            /*
+            if (firstNumber < secondNumber)
+                nwd = firstNumber;
+            else
+                nwd = secondNumber;
+            */
+            nwd = (firstNumber < secondNumber) ? firstNumber : secondNumber;
+            
+            while(firstNumber % nwd !=0
+                || secondNumber % nwd !=0)
+            {
+                nwd--;
+            }
+            document.write("NWD: " + nwd + "<br/>");
+        }
+
+        //wersja 2
+        //NWD(a, b) = a             jesli b = 0
+        
+
+        //task1();
 
     </script>
 </body>
