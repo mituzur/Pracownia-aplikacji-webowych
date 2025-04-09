@@ -6,8 +6,16 @@
     <title>Hierarchia DOM</title>
 </head>
 <body>
-    <script>
+    <div id="firstDiv">To jest jakiś DIV z zawartością</div>
 
+    <script>
+        document.write("Pełna ścieżka: " + window.location.href + "<br/>");
+        document.write("Protokół: " + location.protocol + "<br/>");
+
+        var firstDiv = document.getElementById("firstDiv");
+        alert(firstDiv.innerText);
+        firstDiv.innerText = "Tekst zamieniony";
+        
     </script>
 </body>
 </html>
