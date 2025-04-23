@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="0 - 360" id="color" max="360">
+    <input type="submit" value="Generuj paletę" onclick="function1()">
+    <br> <br> <br>
+    <table>
+        <tr>
+            <td colspan="4" id="mainColor">Kolor głowny</td>
+        </tr>
+        <tr>
+            <th id="color2">Kolor 2</th>
+            <th id="color3">Kolor 3</th>
+            <th id="color4">Kolor 4</th>
+            <th id="color5">Kolor 5</th>
+        </tr>
+    </table>
+    <script>
+        function function1() {
+            var H = document.getElementById("color").value
+            var colorHSL = "hsl("+ H + ", 100%, 50%)";
+            document.getElementById("mainColor").style.backgroundColor = colorHSL;
+
+            colorHSL = "hsl("+ H + ", 80%, 50%)";
+            document.getElementById("color2").style.backgroundColor = colorHSL;
+            
+            colorHSL = "hsl("+ H + ", 60%, 50%)";
+            document.getElementById("color3").style.backgroundColor = colorHSL;
+
+            colorHSL = "hsl("+ H + ", 40%, 50%)";
+            document.getElementById("color4").style.backgroundColor = colorHSL;
+
+            colorHSL = "hsl("+ H + ", 20%, 50%)";
+            document.getElementById("color5").style.backgroundColor = colorHSL;
+        }
+    </script>
+</body>
+</html>
