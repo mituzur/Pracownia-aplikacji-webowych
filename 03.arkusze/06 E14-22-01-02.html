@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Podaj numer kawy:</h2>
+    <input type="text" id="numerKawy"><br><br>
+
+    <h2>Podaj wagę w dekagramach</h2>
+    <input type="text" id="waga"><br><br>
+    
+    <button onclick="zamow()">Zamów</button>
+
+    <p id="wynik"></p>
+
+    <script>
+        function zamow() {
+            var numerKawy = parseInt(document.getElementById("numerKawy").value);
+            var waga = parseInt(document.getElementById("waga").value)
+
+            var cenaZaDekagram
+
+            if (numerKawy === 1) {
+                cenaZaDekagram = 5;
+            } else if (numerKawy === 2) {
+                cenaZaDekagram = 6;
+            } else if (numerKawy === 4) {
+                cenaZaDekagram = 7;
+            } else {
+                cenaZaDekagram = 0
+            }
+
+        var koszt = cenaZaDekagram * waga;
+
+        document.getElementById("wynik").innerText = "Koszt zamówienia wynosi: " + koszt.toFixed(2) + " zł";
+        }
+    </script>
+</body>
+</html>
