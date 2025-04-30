@@ -3,38 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon Fryzjerski</title>
+    <title>Promocja na Strzyżenie</title>
 </head>
 <body>
-    <table width="80%" align="center" border="0" cellpadding="10">
-        <tr>
-            <td colspan="2" align="center">
-                <h1>SALON FRYZJERSKI</h1>
-            </td>
-        </tr>
-        <tr>
-            <td width="60%" valign="top">
-                <img src="fryzjer.jpg" alt="Zdjęcie" width="100%">
-                <p>Kontakt: 111 222 333</p>
-                <p>Witaj! Miło nam, że odwiedziłeś nasz salon. Zapoznaj się z ofertą i sprawdź promocje!</p>
-            </td>
-            <td width="40%" valign="top" bgcolor="#e0f2f7">
-                <h2 align="center">MENU</h2>
-                <ol>
-                    <li>Strzyżenie
-                        <ul>
-                            <li>Krótkie</li>
-                            <li>średnie</li>
-                            <li>półdługie</li>
-                            <li>długie</li>
-                        </ul>
-                    </li>
-                    <li>czesanie</li>
-                    <li>Koloryzacja</li>
-                </ol>
-                <img src="fryzjerka.jpg" alt="Uśmiechnięta fryzjerka" width="100">
-            </td>
-        </tr>
-    </table>
+
+    <div class="promocja">
+        <h3>Dziś promocja na strzyżenie włosów</h3>
+        <form id="promocja-form">
+            <div>
+                <label>
+                    <input type="radio" name="dlugosc" value="krotkie" data-cena="25"> Krótkie
+                </label><br>
+                <label>
+                    <input type="radio" name="dlugosc" value="srednie" data-cena="30"> Średnie
+                </label><br>
+                <label>
+                    <input type="radio" name="dlugosc" value="poldugie" data-cena="40"> Półdługie
+                </label><br>
+                <label>
+                    <input type="radio" name="dlugosc" value="dlugie" data-cena="50"> Długie
+                </label><br>
+            </div>
+            <button type="button" onclick="pokazCene()">Sprawdź cenę strzyżenia</button>
+        </form>
+        <div id="cena-strzyzenia" class="cena-info"></div>
+    </div>
+
+    <script>
+        function pokazCene() {
+            const form = document.getElementById('promocja-form');
+            const cenaDiv = document.getElementById('cena-strzyzenia');
+            const wybranaDlugosc = form.querySelector('input[name="dlugosc"]:checked');
+
+            if (wybranaDlugosc) {
+                const cena = wybranaDlugosc.dataset.cena;
+                cenaDiv.textContent = `Cena strzyżenia: ${cena} zł`;
+            } else {
+                cenaDiv.textContent = 'Wybierz długość włosów.';
+            }
+        }
+    </script>
+
 </body>
 </html>
